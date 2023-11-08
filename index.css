@@ -1,0 +1,96 @@
+.mainContainer{
+    box-sizing: border-box;
+
+}
+
+.innerContainer{
+    background-image: linear-gradient( #5f9668b0, white);
+}
+.MainTitleContainer{
+    width: 100vw;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.achiveBox{
+    width: 160px;
+    height: 60px;
+    background-color:#87cc942f
+    
+}
+.active{
+    border-bottom: 1px solid  #2d5c36;
+}
+.footerContainer{
+    height:30rem;
+    background-color:#709b7749
+}
+.custShadow{
+    box-shadow:  0 .125rem .25rem rgba(0, 0, 0, 0.534)
+}
+.subscribeContainer{
+   position: relative;
+   top: 6rem;
+   height:10rem;
+}
+.boxOfSubscribe{
+    width: 70vw;
+   height:200px;
+
+
+}
+.instructorsContaier{
+    height:500px;
+    background-color:#709b7749
+}
+.BlogsContainer{
+    height:35rem;
+ 
+}
+.custBackColor{
+    background-color: #2d5c36 ;
+    border-radius:5px  ;
+}
+.link{
+
+    text-decoration: none;
+}
+.custBackColorWhite{
+    background-color: white ;
+    
+}
+.custcardRounded{
+    border-radius:10px !important;
+}
+.custImageRounded{
+    border-radius:10px  10px 0px 0px!important;
+}
+.custColorGreen{
+    color: #2d5c36;
+}
+.custColoWhite{
+    color: white;
+}
+.fontS12{
+    font-size: 12px;
+}
+.fw900{
+    font-weight:bold;
+}
+.fw800{
+    font-weight: 800;
+}
+.fw600{
+    font-weight: 600;
+}
+.fw700{
+    font-weight: 700;
+}
+.fw400{
+    font-weight: 400;
+}
+.fw300{
+    font-weight: 300;
+}
