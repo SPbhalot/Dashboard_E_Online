@@ -213,14 +213,7 @@ function GeneratBlogData(){
 function FooterData(){
     
 const footerData = {
-    socialMediaLinks: [
-        { iconClass: "fab fa-facebook-f", link: "#" },
-        { iconClass: "fab fa-twitter", link: "#" },
-        { iconClass: "fab fa-google", link: "#" },
-        { iconClass: "fab fa-instagram", link: "#" },
-        { iconClass: "fab fa-linkedin", link: "#" },
-        { iconClass: "fab fa-github", link: "#" }
-    ],
+   
     sections: [
         {
             title: "E-Online",
@@ -249,18 +242,18 @@ const footerContainer = document.getElementById('footer-container');
 
 // Create the footer
 const footer = document.createElement('footer');
-footer.className = " text-lg-start d-flex text-muted ";
+footer.className = " text-lg-start d-flex text-muted";
 footer.innerHTML = `
  
     ${footerData.sections.map(sectionData => `
-        <div class="text-start mt-5 w-25">
-            <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <div class="text-start mt-5 w-25 ">
+            <div class="mt-3">
+                <div class="mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
                         <i class="fas fa-gem  "></i>
-                        <span class=" fw600">${sectionData.title}</span>
+                        <span class=" fw900 custColorGreen">${sectionData.title}</span>
                     </h6>
-                    ${sectionData.content.map(item => `<div>${item}</div>`).join('')}
+                    ${sectionData.content.map(item => `<div class="w-100">${item}</div>`).join('')}
                 </div>
             </div>
         </div>

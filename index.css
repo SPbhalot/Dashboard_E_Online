@@ -32,7 +32,7 @@
 }
 .subscribeContainer{
    position: relative;
-   top: 6rem;
+   top: 10rem;
    height:10rem;
 }
 .boxOfSubscribe{
@@ -72,6 +72,10 @@
 }
 .custColoWhite{
     color: white;
+}
+.custColorOrange{
+    background-color: orangered !important;
+    color: white !important;
 }
 .fontS12{
     font-size: 12px;
