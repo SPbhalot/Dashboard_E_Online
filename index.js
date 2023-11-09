@@ -57,7 +57,7 @@ function GeneratOurCourseData(){
     coursesData.forEach(course => {
         const card = document.createElement('div');
         card.className = "card custShadow custcardRounded m-3";
-        card.style = "width: 18rem;";
+        card.style = "width: 25rem;";
     
         card.innerHTML = `
             <img class="card-img-top custImageRounded" src="${course.imageSrc}" alt="Card image cap">
@@ -67,17 +67,17 @@ function GeneratOurCourseData(){
                     <p>${course.description}</p>
                 </div>
                 <div class="d-flex justify-content-between pt-2">
-                    <span>
-                        <img src="" />
-                        <span>${course.year}</span>
+                    <span class="d-flex">
+                        <img src="./images/year.png" width="20px" height="20px"  />
+                        <span class="px-1">${course.year}</span>
                     </span>
-                    <span>
-                    <i class="fa-solid fa-timer"></i>  
-                        <span>${course.duration}</span>
+                    <span class="d-flex">
+                    <img src="./images/timer.png" width="20px" height="20px" />
+                        <span class="px-1">${course.duration}</span>
                     </span>
-                    <span>
-                        <img src="" />
-                        <span>${course.lectures}</span>
+                    <span class="d-flex">
+                        <img src="./images/lecture.png" width="20px" height="20px"  />
+                        <span class="px-1">${course.lectures}</span>
                     </span>
                 </div>
             </div>
@@ -131,24 +131,24 @@ function GeneratOurCourseData(){
     coursesData.forEach(course => {
         const card = document.createElement('div');
         card.className = "card custShadow custcardRounded m-3";
-        card.style = "width: 14rem;";
+        card.style = "width: 18rem;";
     
         card.innerHTML = `
         
             <img class="card-img-top custImageRounded" src="${course.imageSrc}" alt="Card image cap">
             <div class="card-body">
-                <div class="d-flex flex-column border-bottom">
+                <div class="d-flex flex-column border-bottom pb-2">
                     <span class="fw700">${course.title}</span>
                     <span class="fontS12">${course.description}</span>
                 </div>
-                <div class="d-flex justify-content-between pt-2">
-                    <span>
-                        <img src="" />
-                        <span>${course.duration}</span>
+                <div class="d-flex justify-content-between mt-2 ">
+                    <span class="d-flex">
+                        <img src="./images/timer.png" width="20px" height="20px"  />
+                        <span class="px-1">${course.duration}</span>
                     </span>
-                    <span>
-                        <img src="" />
-                        <span>${course.lectures}</span>
+                    <span class="d-flex">
+                        <img src="./images/lecture.png" width="20px" height="20px"  />
+                        <span class="px-1">${course.lectures}</span>
                     </span>
                 </div>
             </div>
@@ -189,7 +189,7 @@ function GeneratBlogData(){
     cardData.forEach(cardData => {
     const card = document.createElement('div');
     card.className = "card custShadow custcardRounded shadow border-0 m-3";
-    card.style = "width: 18rem;";
+    card.style = "width: 25rem;";
     
     card.innerHTML = `
         <img class="card-img-top custImageRounded" src="${cardData.imageSrc}" alt="Card image cap">
@@ -250,7 +250,7 @@ footer.innerHTML = `
             <div class="mt-3">
                 <div class="mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem  "></i>
+                    
                         <span class=" fw900 custColorGreen">${sectionData.title}</span>
                     </h6>
                     ${sectionData.content.map(item => `<div class="w-100">${item}</div>`).join('')}
